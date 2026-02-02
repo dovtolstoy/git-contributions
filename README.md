@@ -140,14 +140,15 @@ The analysis:
 
 ```
 git-contributions/
+├── action.yml          # GitHub Action metadata (root for easy usage)
+├── dist/               # Bundled action code
 ├── packages/
 │   ├── core/           # Shared analysis logic
 │   │   ├── analyzer.ts # AI analysis with GPT-4o
 │   │   ├── github.ts   # GitHub API integration
 │   │   └── supabase.ts # Database operations
 │   │
-│   ├── action/         # GitHub Action
-│   │   ├── action.yml  # Action metadata
+│   ├── action/         # GitHub Action source
 │   │   └── src/        # Action entry point
 │   │
 │   ├── dashboard/      # React dashboard

@@ -2,8 +2,11 @@
 node_modules/
 
 # Build outputs
-dist/
+packages/**/dist/
 *.tsbuildinfo
+
+# Keep root dist/ for GitHub Action (required to be committed)
+!dist/
 
 # Environment
 .env
