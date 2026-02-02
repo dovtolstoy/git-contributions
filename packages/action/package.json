@@ -1,0 +1,22 @@
+{
+  "name": "@git-contributions/action",
+  "version": "1.0.0",
+  "description": "GitHub Action for tracking contributions",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc && node scripts/bundle.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "@git-contributions/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  }
+}

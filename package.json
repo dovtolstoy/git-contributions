@@ -1,0 +1,28 @@
+{
+  "name": "git-contributions",
+  "version": "1.0.0",
+  "description": "Track developer productivity with AI-powered quality scoring",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @git-contributions/dashboard dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "keywords": [
+    "git",
+    "contributions",
+    "productivity",
+    "github-action",
+    "ai",
+    "code-quality"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

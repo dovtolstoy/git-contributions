@@ -1,0 +1,25 @@
+{
+  "name": "@git-contributions/cli",
+  "version": "1.0.0",
+  "description": "CLI for git-contributions backfill and setup",
+  "type": "module",
+  "bin": {
+    "git-contributions": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@git-contributions/core": "workspace:*",
+    "@supabase/supabase-js": "^2.49.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,34 @@
+name: 'Git Contributions'
+description: 'Analyze PR quality and track developer contributions with AI'
+author: 'Git Contributions'
+branding:
+  icon: 'git-commit'
+  color: 'purple'
+
+inputs:
+  supabase-url:
+    description: 'Supabase project URL'
+    required: true
+  supabase-key:
+    description: 'Supabase service role key'
+    required: true
+  openai-api-key:
+    description: 'OpenAI API key for analysis'
+    required: true
+  github-token:
+    description: 'GitHub token for fetching PR details'
+    required: true
+  min-lines:
+    description: 'Minimum lines to trigger analysis (default: 10)'
+    required: false
+    default: '10'
+
+outputs:
+  quality-score:
+    description: 'The quality score (1-10) assigned to the PR'
+  quality-summary:
+    description: 'Brief summary of the code quality assessment'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
