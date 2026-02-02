@@ -14,6 +14,18 @@ Track developer productivity with AI-powered quality scoring. Analyze PRs when t
 - **CLI for Backfill** - Sync historical PRs to populate your dashboard instantly
 - **Team Insights** - Daily summaries, contributor rankings, and quality metrics
 
+## Screenshots
+
+### Contributor Leaderboard
+Track contributions by team member with quality-weighted bars. Colors indicate code quality scores (green = high quality, orange = average).
+
+![Contributor Leaderboard](docs/images/leaderboard.png)
+
+### Team Progress
+Monitor team goals, see total lines shipped, and highlight the most impactful commits of the period.
+
+![Team Progress](docs/images/team-progress.png)
+
 ## Quick Start (5 Minutes)
 
 ### 1. Set Up Supabase
